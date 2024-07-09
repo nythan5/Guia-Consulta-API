@@ -9,10 +9,10 @@ from rest_framework.permissions import IsAuthenticated
 class ModalitieListCreateView(ListCreateAPIView):
     queryset = Modalitie.objects.all()
     serializer_class = ModalitieSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
 class ModalitieRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     queryset = Modalitie.objects.all()
     serializer_class = ModalitieSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
